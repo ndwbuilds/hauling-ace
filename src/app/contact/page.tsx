@@ -8,8 +8,8 @@ export const metadata: Metadata = {
     'Get a free quote from Hauling Ace. Call us or fill out our quick form for moving, hauling, clean-outs, and more.',
 }
 
-const PHONE = '570-618-1143'
-const PHONE_HREF = 'tel:+15706181143'
+const PHONE = '(347) 388-1312'
+const PHONE_HREF = 'tel:+13473881312'
 const EMAIL = 'haulingacecompany@gmail.com'
 
 export default function ContactPage() {

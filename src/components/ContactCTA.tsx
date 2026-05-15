@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import { Phone } from 'lucide-react'
 
-const PHONE = '570-618-1143'
-const PHONE_HREF = 'tel:+15706181143'
+const PHONE = '(347) 388-1312'
+const PHONE_HREF = 'tel:+13473881312'
 
 export default function ContactCTA() {
   return (

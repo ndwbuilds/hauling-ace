@@ -32,7 +32,7 @@ export default function ServiceAreas() {
               we can get there, we will.
             </p>
             <a
-              href="tel:+15706181143"
+              href="tel:+13473881312"
               className="inline-block bg-ink hover:bg-charcoal text-white font-bold px-7 py-3.5 rounded-full transition-colors"
             >
               Call to Confirm Your Area

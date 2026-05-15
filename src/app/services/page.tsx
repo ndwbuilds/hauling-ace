@@ -142,7 +142,7 @@ export default function ServicesPage() {
                       </ul>
                       <div className="mt-8 pt-6 border-t border-white/10">
                         <a
-                          href="tel:+15706181143"
+                          href="tel:+13473881312"
                           className="flex items-center gap-2 text-gold font-semibold hover:underline"
                         >
                           <Phone size={16} />
