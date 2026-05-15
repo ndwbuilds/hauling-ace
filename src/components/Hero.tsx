@@ -25,8 +25,8 @@ export default function Hero() {
       {/* Gold accent line at top */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gold" />
 
-      {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 text-center">
+      {/* Content — pt-20 offsets the fixed navbar height */}
+      <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 text-center pt-20">
         {/* Eyebrow */}
         <p className="inline-flex items-center gap-2 text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-6">
           <span className="w-8 h-px bg-gold" />
