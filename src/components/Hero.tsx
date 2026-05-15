@@ -66,7 +66,7 @@ export default function Hero() {
 
           {/* Trust chips */}
           <div className="flex flex-wrap items-center justify-center gap-3 mt-12">
-            {['Licensed & Insured', 'Local & Reliable', 'Free Estimates', 'Stress-Free'].map(
+            {['Insured', 'Local & Reliable', 'Free Estimates', 'Stress-Free'].map(
               (item) => (
                 <span
                   key={item}

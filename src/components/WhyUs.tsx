@@ -3,9 +3,9 @@ import { ShieldCheck, MapPin, HeartHandshake, DollarSign } from 'lucide-react'
 const pillars = [
   {
     icon: ShieldCheck,
-    title: 'Licensed & Insured',
+    title: 'Insured',
     description:
-      'Your belongings are protected. We operate fully licensed and carry the insurance to back it up.',
+      'Your belongings are protected. We carry full insurance so you're covered from start to finish.',
   },
   {
     icon: MapPin,
