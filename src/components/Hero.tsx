@@ -7,8 +7,8 @@ const PHONE_HREF = 'tel:+15706181143'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
-      {/* Background image — Next.js Image for WebP conversion + preload */}
+    <section className="relative min-h-[100dvh] overflow-hidden">
+      {/* Background image */}
       <Image
         src="/images/truck.jpg"
         alt="Hauling Ace branded van"
@@ -25,56 +25,58 @@ export default function Hero() {
       {/* Gold accent line at top */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gold" />
 
-      {/* Content — pt-20 offsets the fixed navbar height */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 text-center pt-20">
-        {/* Eyebrow */}
-        <p className="inline-flex items-center gap-2 text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-6">
-          <span className="w-8 h-px bg-gold" />
-          Milford, PA &amp; Surrounding Areas
-          <span className="w-8 h-px bg-gold" />
-        </p>
+      {/* Full-height content wrapper — pt-24 guarantees clearance below fixed navbar */}
+      <div className="relative z-10 min-h-[100dvh] flex flex-col items-center justify-center text-center px-6 lg:px-8 pt-24 pb-12">
+        <div className="max-w-5xl mx-auto w-full">
+          {/* Eyebrow */}
+          <p className="inline-flex items-center gap-2 text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-6">
+            <span className="w-8 h-px bg-gold" />
+            Milford, PA &amp; Surrounding Areas
+            <span className="w-8 h-px bg-gold" />
+          </p>
 
-        {/* Headline */}
-        <h1 className="font-display text-5xl sm:text-6xl lg:text-8xl font-bold text-white leading-tight mb-6">
-          When You Gotta Move,{' '}
-          <span className="text-gold italic">Hauling Ace</span> Has You Covered.
-        </h1>
+          {/* Headline */}
+          <h1 className="font-display text-5xl sm:text-6xl lg:text-8xl font-bold text-white leading-tight mb-6">
+            When You Gotta Move,{' '}
+            <span className="text-gold italic">Hauling Ace</span> Has You Covered.
+          </h1>
 
-        {/* Subheading */}
-        <p className="text-white/75 text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-          Moving, hauling, clean-outs, and more across Eastern Pennsylvania,
-          Western New Jersey, and Southern New York. Stress-free. Every time.
-        </p>
+          {/* Subheading */}
+          <p className="text-white/75 text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+            Moving, hauling, clean-outs, and more across Eastern Pennsylvania,
+            Western New Jersey, and Southern New York. Stress-free. Every time.
+          </p>
 
-        {/* CTAs */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href={PHONE_HREF}
-            className="flex items-center gap-3 bg-gold hover:bg-gold-light text-ink font-bold text-lg px-8 py-4 rounded-full transition-all hover:scale-105 shadow-lg shadow-gold/20"
-          >
-            <Phone size={20} />
-            Call {PHONE}
-          </a>
-          <Link
-            href="/contact"
-            className="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold text-lg px-8 py-4 rounded-full border border-white/30 transition-all hover:scale-105 backdrop-blur-sm"
-          >
-            Get a Free Quote
-          </Link>
-        </div>
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href={PHONE_HREF}
+              className="flex items-center gap-3 bg-gold hover:bg-gold-light text-ink font-bold text-lg px-8 py-4 rounded-full transition-all hover:scale-105 shadow-lg shadow-gold/20"
+            >
+              <Phone size={20} />
+              Call {PHONE}
+            </a>
+            <Link
+              href="/contact"
+              className="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold text-lg px-8 py-4 rounded-full border border-white/30 transition-all hover:scale-105 backdrop-blur-sm"
+            >
+              Get a Free Quote
+            </Link>
+          </div>
 
-        {/* Trust chips */}
-        <div className="flex flex-wrap items-center justify-center gap-3 mt-12">
-          {['Licensed & Insured', 'Local & Reliable', 'Free Estimates', 'Stress-Free'].map(
-            (item) => (
-              <span
-                key={item}
-                className="text-white/60 text-sm px-4 py-1.5 rounded-full border border-white/20"
-              >
-                {item}
-              </span>
-            )
-          )}
+          {/* Trust chips */}
+          <div className="flex flex-wrap items-center justify-center gap-3 mt-12">
+            {['Licensed & Insured', 'Local & Reliable', 'Free Estimates', 'Stress-Free'].map(
+              (item) => (
+                <span
+                  key={item}
+                  className="text-white/60 text-sm px-4 py-1.5 rounded-full border border-white/20"
+                >
+                  {item}
+                </span>
+              )
+            )}
+          </div>
         </div>
       </div>
 
