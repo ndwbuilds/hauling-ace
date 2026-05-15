@@ -15,6 +15,7 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://hauling-ace.vercel.app'),
   title: 'Hauling Ace | Moving & Hauling Services – Eastern PA, NJ & NY',
   description:
     'Professional moving, clean-outs, delivery, and home prep in Eastern Pennsylvania, Western New Jersey, and Southern New York. Call for a free quote.',
