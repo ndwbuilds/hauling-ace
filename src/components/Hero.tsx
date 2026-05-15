@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, ArrowDown } from 'lucide-react'
 
 const PHONE = '570-618-1143'
@@ -6,14 +7,19 @@ const PHONE_HREF = 'tel:+15706181143'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/truck.jpg')" }}
+    <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
+      {/* Background image — Next.js Image for WebP conversion + preload */}
+      <Image
+        src="/images/truck.jpg"
+        alt="Hauling Ace branded van"
+        fill
+        priority
+        quality={75}
+        className="object-cover object-center"
+        sizes="100vw"
       />
 
-      {/* Dark overlay — gradient from dark bottom to slightly lighter top */}
+      {/* Dark overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-ink/75 via-ink/65 to-ink/85" />
 
       {/* Gold accent line at top */}
