@@ -5,7 +5,7 @@ const pillars = [
     icon: ShieldCheck,
     title: 'Insured',
     description:
-      'Your belongings are protected. We carry full insurance so you're covered from start to finish.',
+      "Your belongings are protected. We carry full insurance so you're covered from start to finish.",
   },
   {
     icon: MapPin,
